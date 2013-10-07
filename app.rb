@@ -52,6 +52,10 @@ module Api
         json({ status: "success", message: "API v1" })
       end
 
+      get '/users' do
+        json({ status: "success", message: "API v1" })
+      end
+
     end
   end
 end
