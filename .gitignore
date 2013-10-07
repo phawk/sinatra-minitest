@@ -1,0 +1,18 @@
+# Ignore system / editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+*.swp
+*.log
+.Spotlight-V100
+.Trashes
+*.sublime-project
+*.sublime-workspace
+._*
+
+# Ignore bundler config
+/.bundle
+
+# Ignore application specific files
+.env
