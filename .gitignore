@@ -10,6 +10,7 @@ Icon
 *.sublime-project
 *.sublime-workspace
 ._*
+coverage/
 
 # Ignore bundler config
 /.bundle

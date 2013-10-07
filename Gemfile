@@ -13,6 +13,7 @@ gem 'multi_json'
 gem 'unicorn'
 
 group :test do
-  gem "rack-test", "~> 0.6.1"
+  gem 'rack-test', '~> 0.6.1'
   gem 'mocha', '~> 0.14.0', require: false
+  gem 'simplecov'
 end

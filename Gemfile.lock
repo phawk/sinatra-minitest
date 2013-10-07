@@ -14,6 +14,10 @@ GEM
       rack (>= 1.0)
     raindrops (0.11.0)
     rake (10.1.0)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
     sinatra (1.4.3)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -40,6 +44,7 @@ DEPENDENCIES
   rack
   rack-test (~> 0.6.1)
   rake
+  simplecov
   sinatra
   sinatra-contrib
   unicorn

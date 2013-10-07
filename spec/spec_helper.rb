@@ -7,6 +7,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'minitest/spec'
 require 'mocha/setup'
+require 'simplecov'
 
 # Load the sinatra application
 require_relative '../app'
