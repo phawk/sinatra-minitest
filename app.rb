@@ -4,9 +4,6 @@ ENV['RACK_ENV'] ||= 'development'
 require "bundler"
 Bundler.require :default, ENV['RACK_ENV'].to_sym
 
-# Add lib folder to the load path
-$:.unshift *Dir["./lib"]
-
 # Helpers
 module JsonHelpers
   def json(hash)

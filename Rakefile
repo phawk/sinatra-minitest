@@ -1,8 +1,6 @@
-Dir['./lib/tasks/**/*.rake'].each { |f| load f }
 task :default => :test
 
-desc "Opens a console session [Development]"
-task(:irb) {
-  irb = ENV['IRB_PATH'] || 'irb'
-  system "#{irb} -r./init.rb"
-}
+desc "Run all tests [Testing]"
+task(:test) do
+  Dir['./spec/**/*_spec.rb'].each { |f| load f }
+end
