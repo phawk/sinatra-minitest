@@ -53,7 +53,13 @@ module Api
       end
 
       get '/users' do
-        json({ status: "success", message: "API v1" })
+        users = ["bob", "andy", "john"]
+        json({ status: "success", users: users })
+      end
+
+      post '/users' do
+        user = parsed_params[:user]
+        json({ status: "success", user: user })
       end
 
     end
