@@ -8,6 +8,9 @@ require 'minitest/pride'
 require 'minitest/spec'
 require 'mocha/setup'
 require 'simplecov'
+require 'coveralls'
+
+Coveralls.wear!
 
 # Load the sinatra application
 require_relative '../app'

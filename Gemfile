@@ -15,5 +15,6 @@ gem 'unicorn'
 group :test do
   gem 'rack-test', '~> 0.6.1'
   gem 'mocha', '~> 0.14.0', require: false
-  gem 'simplecov'
+  gem 'simplecov', require: false
+  gem 'coveralls', require: false
 end
