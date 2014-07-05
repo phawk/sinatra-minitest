@@ -1,4 +1,4 @@
-ENV["RACK_ENV"] = "test"
+ENV['RACK_ENV'] = 'test'
 
 require 'bundler'
 Bundler.require :default, :test
@@ -17,7 +17,7 @@ Coveralls.wear!('rails')
 require_relative '../app'
 
 # Load the unit helpers
-require_relative "support/unit_helpers.rb"
+require_relative 'support/unit_helpers.rb'
 
 class UnitTest < MiniTest::Spec
   include UnitHelpers
