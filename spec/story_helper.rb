@@ -1,5 +1,5 @@
-require_relative "spec_helper"
-require_relative "support/story_helpers.rb"
+require_relative 'spec_helper'
+require_relative 'support/story_helpers.rb'
 
 require 'rack/test'
 

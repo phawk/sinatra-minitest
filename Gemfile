@@ -1,6 +1,6 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.2'
 
 # Sinatra microframework
 gem 'rack'
@@ -14,11 +14,12 @@ gem 'unicorn'
 
 group :development, :test do
   gem 'guard-minitest'
+  gem 'guard-rubocop'
 end
 
 group :test do
-  gem 'rack-test', '~> 0.6.1'
-  gem 'mocha', '~> 0.14.0', require: false
+  gem 'rack-test', '~> 0.6.2'
+  gem 'mocha', '~> 1.1.0', require: false
   gem 'simplecov', require: false
   gem 'coveralls', require: false
 end
