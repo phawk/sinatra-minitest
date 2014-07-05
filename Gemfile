@@ -14,6 +14,7 @@ gem 'unicorn'
 
 group :development, :test do
   gem 'guard-minitest'
+  gem 'guard-rubocop'
 end
 
 group :test do
