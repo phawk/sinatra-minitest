@@ -1,5 +1,4 @@
 module StoryHelpers
-
   # Request helpers
 
   def get_json(path)
@@ -8,7 +7,7 @@ module StoryHelpers
   end
 
   def post_json(url, data)
-    post(url, json(data), { "CONTENT_TYPE" => "application/json" })
+    post(url, json(data),  'CONTENT_TYPE' => 'application/json')
     json_parse(last_response.body)
   end
 
@@ -21,5 +20,4 @@ module StoryHelpers
   def json(hash)
     MultiJson.dump(hash, pretty: true)
   end
-
 end

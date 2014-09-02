@@ -1,7 +1,7 @@
 ENV['RACK_ENV'] ||= 'development'
 
 # Autoload gems from the Gemfile
-require "bundler"
+require 'bundler'
 Bundler.require :default, ENV['RACK_ENV'].to_sym
 
 # Helpers
@@ -19,10 +19,9 @@ module JsonHelpers
 
     parsed = {} unless parsed.is_a?(Hash)
 
-    return parsed
+    parsed
   end
 end
-
 
 # Define app and setup root helper
 module Api
@@ -49,17 +48,17 @@ module Api
     namespace '/api/v1' do
 
       get '/?' do
-        json({ status: "success", message: "API v1" })
+        json(status: 'success', message: 'API v1')
       end
 
       get '/users' do
-        users = ["bob", "andy", "john"]
-        json({ status: "success", users: users })
+        users = %w(bob andy john)
+        json(status: 'success', users: users)
       end
 
       post '/users' do
         user = parsed_params[:user]
-        json({ status: "success", user: user })
+        json(status: 'success', user: user)
       end
 
     end
