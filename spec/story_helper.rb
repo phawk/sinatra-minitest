@@ -7,7 +7,9 @@ class StoryTest < UnitTest
   include Rack::Test::Methods
   include StoryHelpers
 
-  register_spec_type(/Story$/, self)
+  register_spec_type(self) do |desc, *addl|
+    addl.include? :story
+  end
 
   def app
     Api::Base

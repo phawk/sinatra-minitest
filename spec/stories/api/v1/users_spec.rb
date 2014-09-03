@@ -1,6 +1,6 @@
 require_relative '../../../story_helper.rb'
 
-describe 'Api::v1::UsersStory' do
+describe 'Api::v1::UsersStory', :story do
 
   describe 'GET /users' do
     before { get '/api/v1/users' }

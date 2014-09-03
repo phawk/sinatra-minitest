@@ -22,9 +22,8 @@ require_relative 'support/unit_helpers.rb'
 class UnitTest < MiniTest::Spec
   include UnitHelpers
 
-  register_spec_type(/(Unit|Spec|Model)$/, self)
-
-  register_spec_type(self) do |desc|
+  register_spec_type(self) do |desc, *addl|
     true if desc.is_a?(Class)
+    addl.include? :unit
   end
 end
