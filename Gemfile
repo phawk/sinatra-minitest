@@ -14,12 +14,11 @@ gem 'unicorn'
 
 group :development, :test do
   gem 'guard-minitest'
-  gem 'guard-rubocop'
 end
 
 group :test do
+  gem 'minitest', '~> 5.4.1'
+  gem 'minitest-rg'
   gem 'rack-test', '~> 0.6.2'
   gem 'mocha', '~> 1.1.0', require: false
-  gem 'simplecov', require: false
-  gem 'coveralls', require: false
 end

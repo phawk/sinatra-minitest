@@ -3,15 +3,9 @@ ENV['RACK_ENV'] = 'test'
 require 'bundler'
 Bundler.require :default, :test
 
-require 'simplecov'
-require 'coveralls'
 require 'minitest/autorun'
-require 'minitest/pride'
-require 'minitest/spec'
-require 'mocha/setup'
-
-SimpleCov.start 'minitest-specs'
-Coveralls.wear!('rails')
+require 'minitest/rg'
+require 'mocha/mini_test'
 
 # Load the sinatra application
 require_relative '../app'
