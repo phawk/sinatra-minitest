@@ -2,10 +2,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.6.4)
+    codeclimate-test-reporter (0.4.7)
+      simplecov (>= 0.7.1, < 1.0.0)
+    docile (1.1.5)
     guard-compat (1.2.1)
     guard-minitest (2.4.4)
       guard-compat (~> 1.2)
       minitest (>= 3.0)
+    json (1.8.3)
     kgio (2.9.3)
     metaclass (0.0.4)
     minitest (5.4.3)
@@ -21,6 +25,11 @@ GEM
       rack (>= 1.0)
     raindrops (0.13.0)
     rake (10.4.2)
+    simplecov (0.10.0)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -42,6 +51,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  codeclimate-test-reporter
   guard-minitest
   minitest (~> 5.4.1)
   minitest-rg

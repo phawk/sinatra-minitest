@@ -21,4 +21,5 @@ group :test do
   gem 'minitest-rg'
   gem 'rack-test', '~> 0.6.2'
   gem 'mocha', '~> 1.1.0', require: false
+  gem "codeclimate-test-reporter", require: false
 end
